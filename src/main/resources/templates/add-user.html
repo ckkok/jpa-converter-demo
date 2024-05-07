@@ -1,0 +1,9 @@
+<form action="#" th:action="@{/user}" th:object="${user}" method="post">
+    <label for="username">User Name</label>
+    <input type="text" th:field="*{username}" id="username" placeholder="User name">
+    <label for="emailAddress">Email Address</label>
+    <input type="text" th:field="*{emailAddress}" id="emailAddress" placeholder="user@email.com">
+    <label for="birthMonth">Birth Month</label>
+    <input type="text" th:field="*{birthMonth}" id="birthMonth" placeholder="202401">
+    <input type="submit" value="Submit">
+</form>
